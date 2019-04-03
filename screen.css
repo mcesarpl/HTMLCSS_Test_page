@@ -1,9 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
 .container{
     max-width: 1191px;
     height: 758px;
     border: 1px solid rgb(250, 53, 145);
     padding: 25px;
-    margin: 25px;  
+    margin-left: 335px;
+    margin-top: 102px;
+    margin-bottom: 100px;
+    margin-right: 74px;  
 }
 
 form {
@@ -36,13 +41,13 @@ label {
     margin-left: 10px;
     padding-left: 5px;
     max-width: 100%;
-    width: 90px;
+    width: 70px;
     /* border-style: none; */
     border-width: 0;
     font-size: 11px;
     line-height: 20px;
     margin-bottom: 0;
-    top: 20%;
+    top: 13%;
     /* color:white; */
     display: block;
     background-color: white;
@@ -180,15 +185,32 @@ h1 {
     height: 56px;
 }
 
-#browsers::-webkit-calendar-picker-indicator {
+#inputlist::-webkit-calendar-picker-indicator {
     opacity: 100 !important;
+    color: aqua !important;
 }
 
 #inputlist {
     width: 522px !important;
-    height: 56px !important;
+    height: 56px !important;   
 }
 
-.frow {
-    margin-bottom: 2px !important;
+/* .frow {
+    margin-bottom: 15px;
+} */
+
+button {
+    position: relative;
+    left: 77.5%;
+    width: 185px;
+    height: 50px;
+    font-size: 18px !important;
+}
+
+.col-auto {
+    margin-right: 67px;
+}
+
+.col-4  {
+    margin-right: 39.96px !important;
 }
