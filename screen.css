@@ -122,15 +122,31 @@ h1 {
     height: 56px !important;   
 }
 
-button {
+#UpdateButton {
     position: relative;
     left: 81.7%;
     width: 185px;
     height: 50px;
-    font-size: 18px !important;
+    font-size: 18px;
     margin-top: 100px;
+    background-color: #717171;
 }
 
 .col-auto {
     margin-right: 2%;
 }
+
+/* #exampleModalCenter {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: .3rem;
+    outline:0;
+    box-sizing: border-box;
+
+} */

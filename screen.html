@@ -10,6 +10,8 @@
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- JS File -->
+        <script type="text/javascript" src="./screen.js"></script>
     </head>
     <body>
         <div class="container">
@@ -66,7 +68,31 @@
                     </div>
                 </div>
                 <div class="form-group row">
-                    <button type="button" class="btn btn-secondary">Update Model</button>
+                    <!-- <button type="button" class="btn btn-secondary">Update Model</button> -->
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModalCenter" id="UpdateButton">
+                        Update Model
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                          <div class="modal-content" style="width: 260px; height: 146px; padding-bottom: 0;">
+                            <div class="modal-header" style="border-bottom: 0;">
+                                <h5 class="modal-title" id="exampleModalLongTitle">Notification</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body" style=" width: 216px; height: 31px; padding-bottom: 0; padding-top: 0;">
+                                <p style="color: gray; font-size: 13px; margin-bottom: 0px;">Do you really want to update this</p>
+                            </div>
+                            <div class="modal-footer"  style="border-top: 0; padding-top: 13px; padding-left: 0px; padding-right: 0px;">
+                                <button type="button" class="btn btn-secondary" style="width: 130px; height: 50px; margin-right: 0px; border-radius: 0; background-color: black; border-bottom-left-radius: 1px;">Yes</button>
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal" style="width: 130px; height: 50px; margin-left: 0px; border-radius: 0;">No</button>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
                 </div>    
             </form>
         </div>
