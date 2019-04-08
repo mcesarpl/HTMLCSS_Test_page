@@ -2,7 +2,7 @@
 
 <html>
     <head>
-        <title>AiaiAiai</title>
+        <title>UpdateModel</title>
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <!-- CSS -->
@@ -10,14 +10,16 @@
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <!-- JS File -->
-        <script type="text/javascript" src="./screen.js"></script>
+        <!-- Script -->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="screen.js"></script>
+
     </head>
     <body>
         <div class="container">
             <form>
                 <div class="form-group row">
-                    <h1>Model > PolarityModel</h1>
+                    <h1>Model > <span class="getModel">MateusTestModel23</span></h1>
                 </div>
                 <div class="form-group row">
                     <h7>Model information <br>
@@ -28,13 +30,13 @@
                         <div class="form-group row" style="margin-bottom: 10px;">
                             <div class="form-group">
                                 <label for="exampleInputPassword1" style="padding-left: 5px; width: 68px;" >Model Name</label>
-                                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="PolarityModel">
+                                <input type="text" class="form-control modelName" id="formGroupExampleInput" placeholder="PolarityModel">
                             </div>
                         </div>
                         <div class="form-group row" style="margin-bottom: 10px;">
                             <div class="form-group">
                                 <label for="exampleInputPassword1" style="padding-left: 4px; width: 45px;">Purpose</label>
-                                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Polarity">
+                                <input type="text" class="form-control purposeInput" id="formGroupExampleInput" placeholder="Polarity">
                             </div>
                         </div>
                         <div class="form-group row" style="margin-bottom: 8px;">
@@ -70,7 +72,7 @@
                 <div class="form-group row">
                     <!-- <button type="button" class="btn btn-secondary">Update Model</button> -->
                     <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModalCenter" id="UpdateButton">
+                    <button type="button" class="btn btn-secondary buttonupdate" data-toggle="modal" data-target="#exampleModalCenter" id="UpdateButton">
                         Update Model
                     </button>
                     <!-- Modal -->
@@ -87,8 +89,10 @@
                                 <p style="color: gray; font-size: 13px; margin-bottom: 0px;">Do you really want to update this</p>
                             </div>
                             <div class="modal-footer"  style="border-top: 0; padding-top: 13px; padding-left: 0px; padding-right: 0px;">
-                                <button type="button" class="btn btn-secondary" style="width: 130px; height: 50px; margin-right: 0px; border-radius: 0; background-color: black; border-bottom-left-radius: 1px;">Yes</button>
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal" style="width: 130px; height: 50px; margin-left: 0px; border-radius: 0;">No</button>
+                                <button type="button" class="btn btn-secondary buttonyes" style="width: 130px; height: 50px; margin-right: 0px; border-top-left-radius: 0;
+                                border-top-right-radius: 0; border-bottom-right-radius: 0; border-bottom-left-radius: 4px !important; background-color: #414141;
+                                border-bottom-left-radius: 1px;">Yes</button>
+                                <button type="button" class="btn btn-secondary buttonno" data-dismiss="modal" style="width: 130px; height: 50px; margin-left: 0px; border-radius: 0;">No</button>
                             </div>
                           </div>
                         </div>
